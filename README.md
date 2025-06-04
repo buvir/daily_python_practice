@@ -15,6 +15,37 @@ A collection of solved Python problems and tutorials, including regular expressi
 - **Regex_Tutorial.ipynb**: In-depth regular expressions tutorial with examples and explanations.
 - **README.md**: This file.
 
+## 📊 filter_method.ipynb — Feature Selection with Filter Methods
+
+This notebook demonstrates **filter methods** for feature selection in machine learning using Python. Filter methods evaluate the relevance of features by their statistical relationship with the target variable, independent of any machine learning model.
+
+### Key Steps Covered
+
+- **Correlation Analysis:**  
+  - Calculates the correlation between features (like `age`, `income`) and the target (`loan_approval`) to identify the most relevant features.
+- **SelectKBest with ANOVA F-test:**  
+  - Uses `SelectKBest` from `sklearn.feature_selection` with the `f_classif` score function to select the top features for classification tasks (demonstrated on the Iris dataset).
+
+### Libraries Used
+
+- `pandas` — Data manipulation and analysis  
+  [pandas documentation](https://pandas.pydata.org/docs/)
+- `scikit-learn` — Feature selection utilities  
+  [scikit-learn documentation](https://scikit-learn.org/stable/documentation.html)
+
+### Example Datasets
+
+- **Loan Approval Example:**  
+  Small synthetic dataset with `age`, `income`, and `loan_approval` columns.
+- **Iris Dataset:**  
+  Classic multiclass classification dataset included in scikit-learn.
+
+### Why Use Filter Methods?
+
+Filter methods are fast and model-agnostic, making them suitable for quickly reducing the number of features before applying more complex selection or modeling techniques.
+
+
+
 ---
 
 ## 🐍 Setting Up a Python Virtual Environment (venv) in CodeSpaces
